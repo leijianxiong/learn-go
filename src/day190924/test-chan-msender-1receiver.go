@@ -21,6 +21,7 @@ func main() {
 	const NumSenders = 1000
 
 	wgReceivers := sync.WaitGroup{}
+	//因为只有一个接受者 所以只需要等待一个即可
 	wgReceivers.Add(1)
 
 	// ...
